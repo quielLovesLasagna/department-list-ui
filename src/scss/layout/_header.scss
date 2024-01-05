@@ -1,0 +1,103 @@
+@use "../abstracts" as abs;
+
+// THIS IS FOR THE WRAPPER
+.wrapper {
+	display: grid;
+	grid-template-columns: 26rem 1fr;
+}
+
+// HEADER
+.header {
+	background-color: abs.$cl-white;
+	height: 9rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.4rem 4rem;
+
+	&__left {
+		display: flex;
+		align-items: center;
+		border: 1px solid abs.$cl-grey;
+		padding: 1.2rem 2rem;
+		border-radius: 0.7rem;
+	}
+
+	&__input {
+		font-size: 1.6rem;
+		border: none;
+		outline: none;
+		font-family: inherit;
+
+		&::placeholder {
+			color: abs.$cl-grey-3;
+		}
+	}
+
+	&__right {
+		--gap: 1.2rem;
+		display: flex;
+		align-items: center;
+		gap: var(--gap);
+	}
+
+	&__notification {
+		height: 3.8rem;
+		aspect-ratio: 1;
+		background-color: abs.$cl-white-2;
+		display: grid;
+		place-items: center;
+		border-radius: 50%;
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 1rem;
+			aspect-ratio: 1;
+			background-color: abs.$cl-red;
+			border-radius: 50%;
+			border: 2px solid abs.$cl-white-2;
+			position: absolute;
+			top: 0.7rem;
+			right: 0.8rem;
+		}
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		gap: var(--gap);
+	}
+
+	&__user-avatar {
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	&__user-name {
+		font-size: 1.6rem;
+		color: abs.$cl-grey-4;
+		font-weight: abs.$fw-medium;
+	}
+
+	// ICONS
+	&__search-icon {
+		cursor: pointer;
+		font-size: 1.8rem;
+		color: abs.$cl-grey-2;
+		font-weight: abs.$fw-large;
+		margin-right: 1.4rem;
+	}
+
+	&__bell-icon {
+		cursor: pointer;
+		font-size: 2.4rem;
+	}
+
+	&__dropdown-icon {
+		cursor: pointer;
+		font-size: 1.8rem;
+		font-weight: abs.$fw-large;
+		color: abs.$cl-grey-2;
+	}
+}

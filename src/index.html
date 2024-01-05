@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- PHOSPHOR ICONS -->
+		<script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+		<!-- SCSS -->
+		<link rel="stylesheet" href="scss/main.scss" />
+		<title>Department Dashboard</title>
+	</head>
+	<body>
+		<!-- WRAPPER START -->
+		<div class="wrapper">
+			<!-- NAV START -->
+			<nav class="nav">
+				<div class="nav__logo">
+					<img src="../images/icon.png" alt="Icon" class="nav-icon" />
+					<h1 class="nav__heading">Medix<span>.</span></h1>
+				</div>
+				<ul class="nav__list">
+					<li class="nav__list-item">
+						<i class="ph ph-squares-four nav-icon"></i>
+						<p class="nav__text">Dashboard</p>
+					</li>
+					<li class="nav__list-item">
+						<i class="ph ph-calendar nav-icon"></i>
+						<p class="nav__text">Appointment</p>
+					</li>
+					<li class="nav__list-item">
+						<i class="ph ph-user nav-icon"></i>
+						<p class="nav__text">Doctors</p>
+					</li>
+					<li class="nav__list-item">
+						<i class="ph ph-house-simple nav-icon"></i>
+						<p class="nav__text">Departments</p>
+					</li>
+					<li class="nav__list-item">
+						<i class="ph ph-user-plus nav-icon"></i>
+						<p class="nav__text">Patients</p>
+					</li>
+					<li class="nav__list-item">
+						<i class="ph ph-chat-text nav-icon"></i>
+						<p class="nav__text">Chats</p>
+					</li>
+					<li class="nav__list-item">
+						<i class="ph ph-phone-call nav-icon"></i>
+						<p class="nav__text">Calls</p>
+					</li>
+				</ul>
+				<button class="nav__button">
+					<i class="ph ph-plus nav__button-icon"></i>
+					Register Patients
+				</button>
+			</nav>
+			<!-- NAV END -->
+			<!-- CONTENT START -->
+			<div class="content">
+				<!-- HEADER START -->
+				<header class="header">
+					<div class="header__left">
+						<i class="ph ph-magnifying-glass header__search-icon"></i>
+						<input
+							type="text"
+							placeholder="Seach by patients..."
+							class="header__input"
+						/>
+					</div>
+					<div class="header__right">
+						<div class="header__notification">
+							<i class="ph ph-bell header__bell-icon"></i>
+						</div>
+						<div class="header__user">
+							<img
+								src="../images/doctor-standing-with-folder-stethoscope.png"
+								alt="User avatar"
+								class="header__user-avatar"
+							/>
+							<p class="header__user-name">Deko</p>
+						</div>
+						<i class="ph ph-caret-down header__dropdown-icon"></i>
+					</div>
+				</header>
+				<!-- HEADER END -->
+			</div>
+			<!-- CONTENT START -->
+			<!-- WRAPPER END -->
+		</div>
+	</body>
+</html>

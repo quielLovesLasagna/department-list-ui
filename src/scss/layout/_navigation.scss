@@ -1,0 +1,69 @@
+@use "../abstracts" as abs;
+
+.nav {
+	background-color: abs.$cl-white;
+	border-right: 1px solid abs.$cl-grey;
+	display: flex;
+	flex-direction: column;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	&__heading {
+		font-size: 2.4rem;
+		color: abs.$cl-purple;
+
+		& span {
+			color: abs.$cl-red;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		padding: 1rem;
+		margin-bottom: 5rem;
+
+		&-item {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			border-radius: 0.8rem;
+			padding: 1rem 1.8rem;
+			gap: 2rem;
+			@include abs.transitionAll;
+
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	&__list-item:hover {
+		background-color: abs.$cl-white-2;
+	}
+
+	&__list-item:hover &-icon {
+		color: abs.$cl-purple;
+	}
+
+	&__list-item:hover &__text {
+		color: abs.$cl-purple;
+	}
+
+	&__text {
+		color: abs.$cl-grey-7;
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+
+	// ICONS
+	&-icon {
+		font-size: 3rem;
+		color: abs.$cl-grey-6;
+	}
+}
