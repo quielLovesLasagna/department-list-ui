@@ -7,6 +7,8 @@
 		<script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
 		<!-- SCSS -->
 		<link rel="stylesheet" href="scss/main.scss" />
+		<!-- SCRIPT -->
+		<script defer src="./js/script.js"></script>
 		<title>Department Dashboard</title>
 	</head>
 	<body>
@@ -82,9 +84,38 @@
 					</div>
 				</header>
 				<!-- HEADER END -->
+				<!-- MAIN START -->
+				<main class="main">
+					<div class="main__chart-1">
+						<canvas id="doughnutChart"></canvas>
+					</div>
+					<div class="main__chart-2"><canvas id="barChart"></canvas></div>
+					<div class="department">
+						<div class="department__header">
+							<p class="department__p">Department List</p>
+							<button class="department__button">Add Department</button>
+						</div>
+						<div class="department__header">
+							<p class="department__header-label">Department Name</p>
+							<p class="department__header-label">Doctor</p>
+							<p class="department__header-label">Gender</p>
+							<p class="department__header-label">Head Of Department</p>
+							<p class="department__header-label">Action</p>
+							<p class="department__header-label">Status</p>
+						</div>
+						<ul class="department__list">
+							<li class="department__list-item"></li>
+							<li class="department__list-item"></li>
+							<li class="department__list-item"></li>
+							<li class="department__list-item"></li>
+						</ul>
+					</div>
+				</main>
 			</div>
-			<!-- CONTENT START -->
+			<!-- CONTENT END -->
 			<!-- WRAPPER END -->
 		</div>
+		<!-- FOR CHART.JS -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	</body>
 </html>

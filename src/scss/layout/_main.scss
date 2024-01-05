@@ -1,0 +1,10 @@
+@use "../abstracts" as abs;
+
+.main {
+	--gap: 3rem;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	grid-template-rows: 29.9rem 1fr;
+	gap: var(--gap);
+	padding: var(--gap);
+}
