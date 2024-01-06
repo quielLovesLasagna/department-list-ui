@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Project Overview](./assets/preview.png)
+![Project Overview](./assets/preview-1.png)
 
 ### Links
 
