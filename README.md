@@ -19,7 +19,7 @@ A very simple department list dashboard
 
 Users should be able to:
 
-- See YouTube UI clone
+- See a simple dashboard
 
 ### Screenshot
 
@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://quiel-department-list-ui.netlify.app/](https://quiel-department-list-ui.netlify.app/)
 
 ## My process
 
