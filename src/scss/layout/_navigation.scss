@@ -5,6 +5,15 @@
 	border-right: 1px solid abs.$cl-grey;
 	display: flex;
 	flex-direction: column;
+	width: 26rem;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	&-placeholder {
+		height: 100vh;
+	}
 
 	&__logo {
 		display: flex;

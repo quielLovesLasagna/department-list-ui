@@ -21,3 +21,16 @@
 		font-weight: abs.$fw-large;
 	}
 }
+
+.department__button {
+	cursor: pointer;
+	width: 15rem;
+	height: 4rem;
+	border-radius: 0.6rem;
+	border: none;
+	background-color: abs.$cl-purple;
+	box-shadow: 0px 1px 1px 0px rgba(123, 123, 123, 0.16);
+	color: abs.$cl-white;
+	font-weight: abs.$fw-small;
+	font-size: 1.4rem;
+}

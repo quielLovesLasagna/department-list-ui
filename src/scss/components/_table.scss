@@ -1,0 +1,138 @@
+@use "../abstracts" as abs;
+
+table {
+	border-collapse: collapse;
+
+	thead {
+		background-color: abs.$cl-white-2;
+		font-size: 1.6rem;
+		color: abs.$cl-grey-8;
+
+		th {
+			padding: 1.7rem 2.4rem;
+			text-align: left;
+			font-weight: abs.$fw-small;
+
+			&:first-child {
+				border-radius: 0.6rem 0 0 0.6rem;
+			}
+
+			&:last-child {
+				border-radius: 0 0.6rem 0.6rem 0;
+			}
+		}
+	}
+
+	tbody {
+		font-size: 1.4rem;
+		color: abs.$cl-grey-9;
+
+		tr:not(:last-child) {
+			border-bottom: 1px solid abs.$cl-grey;
+		}
+
+		td {
+			padding: 2rem 2.4rem;
+			text-align: left;
+			font-weight: abs.$fw-small;
+		}
+	}
+}
+
+// DOCTOR PROFILE
+.doctor {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	padding: 2rem 0 2rem 2rem;
+
+	&__avatar {
+		width: 4rem;
+		height: 4rem;
+		display: grid;
+		place-items: center;
+		border-radius: 0.7rem;
+
+		&-1 {
+			background-color: abs.$cl-light-grayish-orange;
+		}
+
+		&-2 {
+			background-color: abs.$cl-light-grayish-orange-2;
+		}
+
+		&-3 {
+			background-color: abs.$cl-light-grayish-pink;
+		}
+
+		&-4 {
+			background-color: abs.$cl-light-grayish-pink-2;
+		}
+	}
+
+	&__avatar-img {
+		width: 3rem;
+		height: 3rem;
+	}
+}
+
+// DCTOR GENDER
+.gender {
+	text-align: center;
+}
+
+// DOCTOR STATUS
+.status {
+	width: 7.4rem;
+	height: 3rem;
+	border-radius: 0.6rem;
+	display: grid;
+	place-items: center;
+	font-size: 1.2rem;
+
+	&--active {
+		color: abs.$cl-green-2;
+		background-color: abs.$cl-light-grayish-pink-3;
+	}
+
+	&--inactive {
+		color: abs.$cl-red-2;
+		background-color: abs.$cl-light-grayish-orange-3;
+	}
+}
+
+// ACTIONS
+.action {
+	text-align: center;
+
+	&__icons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+
+		& > * {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 2.8rem;
+			width: 2.8rem;
+			border: 1px solid abs.$cl-grey;
+			border-radius: 0.6rem;
+		}
+	}
+
+	.ph-pencil,
+	.ph-user {
+		font-size: 1.8rem;
+		color: abs.$cl-purple;
+		font-weight: abs.$fw-medium;
+	}
+
+	.ph-trash {
+		font-size: 1.8rem;
+		color: abs.$cl-red-2;
+		font-weight: abs.$fw-medium;
+	}
+}

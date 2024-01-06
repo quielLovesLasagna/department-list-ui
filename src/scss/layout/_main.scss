@@ -8,3 +8,25 @@
 	gap: var(--gap);
 	padding: var(--gap);
 }
+
+.department {
+	grid-column: 1 / -1;
+	background-color: abs.$cl-white;
+	padding: 3rem;
+	border-radius: 1.4rem;
+	display: flex;
+	flex-direction: column;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 2rem;
+	}
+
+	&__p {
+		font-size: 1.8rem;
+		color: abs.$cl-dark-blue;
+		font-weight: abs.$fw-small;
+	}
+}

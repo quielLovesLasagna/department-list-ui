@@ -55,6 +55,7 @@
 					Register Patients
 				</button>
 			</nav>
+			<div class="nav-placeholder"></div>
 			<!-- NAV END -->
 			<!-- CONTENT START -->
 			<div class="content">
@@ -95,20 +96,136 @@
 							<p class="department__p">Department List</p>
 							<button class="department__button">Add Department</button>
 						</div>
-						<div class="department__header">
-							<p class="department__header-label">Department Name</p>
-							<p class="department__header-label">Doctor</p>
-							<p class="department__header-label">Gender</p>
-							<p class="department__header-label">Head Of Department</p>
-							<p class="department__header-label">Action</p>
-							<p class="department__header-label">Status</p>
-						</div>
-						<ul class="department__list">
-							<li class="department__list-item"></li>
-							<li class="department__list-item"></li>
-							<li class="department__list-item"></li>
-							<li class="department__list-item"></li>
-						</ul>
+						<table>
+							<thead>
+								<tr>
+									<th>Department Name</th>
+									<th>Doctor</th>
+									<th class="gender">Gender</th>
+									<th>Head Of Department</th>
+									<th class="action">Action</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>ICU</td>
+									<td class="doctor">
+										<div class="doctor__avatar doctor__avatar-1">
+											<img
+												src="../images/doctor1.png"
+												alt="Doctor avatar"
+												class="doctor__avatar-img"
+											/>
+										</div>
+										Kicker Nicil
+									</td>
+									<td class="gender">Male</td>
+									<td>Heidry kon</td>
+									<td class="action">
+										<div class="action__icons">
+											<div class="action__icons-edit">
+												<i class="ph ph-pencil"></i>
+											</div>
+											<div class="action__icons-profile">
+												<i class="ph ph-user"></i>
+											</div>
+											<div class="action__icons-delete">
+												<i class="ph ph-trash"></i>
+											</div>
+										</div>
+									</td>
+									<td><span class="status status--active">Active</span></td>
+								</tr>
+								<tr>
+									<td>Emergency</td>
+									<td class="doctor">
+										<div class="doctor__avatar doctor__avatar-2">
+											<img
+												src="../images/doctor2.png"
+												alt="Doctor avatar"
+												class="doctor__avatar-img"
+											/>
+										</div>
+										Killan James
+									</td>
+									<td class="gender">Male</td>
+									<td>Thomas Fletcher</td>
+									<td class="action">
+										<div class="action__icons">
+											<div class="action__icons-edit">
+												<i class="ph ph-pencil"></i>
+											</div>
+											<div class="action__icons-profile">
+												<i class="ph ph-user"></i>
+											</div>
+											<div class="action__icons-delete">
+												<i class="ph ph-trash"></i>
+											</div>
+										</div>
+									</td>
+									<td><span class="status status--inactive">Inactive</span></td>
+								</tr>
+								<tr>
+									<td>ICU</td>
+									<td class="doctor">
+										<div class="doctor__avatar doctor__avatar-3">
+											<img
+												src="../images/doctor3.png"
+												alt="Doctor avatar"
+												class="doctor__avatar-img"
+											/>
+										</div>
+										Deler Karon
+									</td>
+									<td class="gender">Female</td>
+									<td>Jonathan Doe</td>
+									<td class="action">
+										<div class="action__icons">
+											<div class="action__icons-edit">
+												<i class="ph ph-pencil"></i>
+											</div>
+											<div class="action__icons-profile">
+												<i class="ph ph-user"></i>
+											</div>
+											<div class="action__icons-delete">
+												<i class="ph ph-trash"></i>
+											</div>
+										</div>
+									</td>
+									<td><span class="status status--active">Active</span></td>
+								</tr>
+								<tr>
+									<td>Neurology</td>
+									<td class="doctor">
+										<div class="doctor__avatar doctor__avatar-4">
+											<img
+												src="../images/doctor4.png"
+												alt="Doctor avatar"
+												class="doctor__avatar-img"
+											/>
+										</div>
+										Michel Jon
+									</td>
+									<td class="gender">Male</td>
+									<td>Michel Liyo</td>
+									<td class="action">
+										<div class="action__icons">
+											<div class="action__icons-edit">
+												<i class="ph ph-pencil"></i>
+											</div>
+											<div class="action__icons-profile">
+												<i class="ph ph-user"></i>
+											</div>
+											<div class="action__icons-delete">
+												<i class="ph ph-trash"></i>
+											</div>
+										</div>
+									</td>
+									<td><span class="status status--active"> Active </span></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</main>
 			</div>
